@@ -10,7 +10,7 @@ namespace ConceptsPOO
     {
         public float CommissionPercentaje { get; set; }
         public decimal Sales { get; set; }
-        public override decimal getValueToPay()
+        public override decimal GetValueToPay()
         {
             return Sales * (decimal)CommissionPercentaje;
         }
@@ -20,7 +20,7 @@ namespace ConceptsPOO
             return $"{base.ToString()}" +
                 $"\n\tCommission percentaje:{$"{CommissionPercentaje:P2}",18}" + 
                 $"\n\tSales................:{$"{Sales:C2}",18}" +
-                $"\n\tValue to pay.........: {$"{getValueToPay():C2}",18}";
+                $"\n\tValue to pay.........: {$"{GetValueToPay():C2}",18}";
         }
     }
     

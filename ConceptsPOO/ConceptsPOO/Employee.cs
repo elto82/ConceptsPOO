@@ -2,7 +2,7 @@
 
 namespace ConceptsPOO
 {
-    public abstract class Employee
+    public abstract class Employee: IPay
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -11,7 +11,7 @@ namespace ConceptsPOO
         public Date HiringDate { get; set; }
         public bool IsActive { get; set; }
 
-        public abstract decimal getValueToPay();
+        public abstract decimal GetValueToPay();
 
         public override string ToString()
         {
